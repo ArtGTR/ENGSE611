@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* พื้นหลัง */
+        .section {
+            background-color: #e3f2fd;
+            padding: 40px 20px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 230px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            color: #333;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        /* สีการ์ดใหม่ */
+        .purple { background-color: #d1c4e9; }
+        .orange { background-color: #ffe0b2; }
+        .teal   { background-color: #b2dfdb; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="section">
+    <div class="card-container">
+
+        <div class="card purple">
+            <h3>บัตรที่ 1</h3>
+            <p><b>ชื่อ:</b> แดง</p>
+            <p><b>จุดเด่น:</b> ส่องพระเก่งและขยัน</p>
+            <p><b>ความสนใจ:</b> ชอบสนใจพระผงมากกว่าพระกรุ</p>
+        </div>
+
+        <div class="card orange">
+            <h3>บัตรที่ 2</h3>
+            <p><b>ชื่อ:</b> เขียวเข้ม</p>
+            <p><b>จุดเด่น:</b> มีการหาประสบการณ์อยู่เสมอ</p>
+            <p><b>ความสนใจ:</b> หาสิ่งใหม่ๆทำอยู่ตลอด</p>
+        </div>
+
+        <div class="card teal">
+            <h3>บัตรที่ 3</h3>
+            <p><b>ชื่อ:</b> เหลืองอาหล่าม</p>
+            <p><b>จุดเด่น:</b> วางแผนงานธุรกิจเป็นอย่างดี</p>
+            <p><b>ความสนใจ:</b> การบริหารและการทำงานเป็นทีม</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
